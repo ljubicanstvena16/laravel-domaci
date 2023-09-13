@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('pozajmicas', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->foreignId('ClanId');
+            $table->foreignId('KnjigaId');
+            $table->string('BrojDanaPozajmice');
+            $table->date('DatumVracanja');
         });
     }
 
