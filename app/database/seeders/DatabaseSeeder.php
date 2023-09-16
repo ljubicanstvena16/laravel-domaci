@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
 
         Clan::truncate();
-        Knjiga::tsruncate();
+        Knjiga::truncate();
         Pozajmica::truncate();
 
         Clan::factory()

@@ -14,8 +14,8 @@ class PozajmicaFactory extends Factory
     public function definition()
     {
         return [
-            'clan_id' => $this->faker->randomDigitNot(0),
-            'knjiga_id' => $this->faker->randomDigitNot(0),
+            'ClanId' => $this->faker->randomDigitNot(0),
+            'KnjigaId' => $this->faker->randomDigitNot(0),
             'DaniPozajmljivanja' => $this->faker->randomNumber($nbDigits = 2),
             'DatumVracanja' => $this->faker->dateTimeThisYear()
         ];
